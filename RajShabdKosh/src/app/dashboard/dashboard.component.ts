@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
 
-    this.scannedImages = 14;
+    this.scannedImages = 67;
   }
 
 }

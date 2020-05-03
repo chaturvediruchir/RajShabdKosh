@@ -1,7 +1,4 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import { ChartModule, HIGHCHARTS_MODULES } from 'angular-highcharts';
-import * as more from 'highcharts/highcharts-more.src';
-import * as solidGauge from 'highcharts/modules/solid-gauge.src';
 
 import * as Highcharts from 'highcharts';
 
@@ -24,16 +21,16 @@ noData(Highcharts);
 export class UploadGraphComponent implements OnInit,AfterViewInit {
   title = 'app';
 
-  @ViewChild('chartTarget')
-  chartTarget: ElementRef;
+  // @ViewChild('chartTarget')
+  // chartTarget: ElementRef;
   options: any;
-  chart: Highcharts.ChartObject;
+  // chart: Highcharts.ChartObject;
 
   ngOnInit() {}
 
   ngAfterViewInit() {
     this.initOptions();
-    this.chart = this.chart(this.chartTarget.nativeElement, this.options as any);
+    // this.chart = this.chart(this.chartTarget.nativeElement, this.options as any);
   }
 
   initOptions() {
